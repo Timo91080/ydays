@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version:*)",
+      "Bash(ollama:*)",
+      "Bash(where:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run test:azure:*)",
+      "Bash(where.exe:*)",
+      "Bash(nul)",
+      "Bash(\"C:\\Users\\diket\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" --version)",
+      "Bash(\"C:\\Users\\diket\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" run mistral \"Explique-moi ce qu''est un agent d''IA.\")",
+      "Bash(node test-azure-openai.js:*)",
+      "Bash(\"C:\\Users\\diket\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" pull mistral)",
+      "Bash(npm run lab3:*)",
+      "Bash(node:*)",
+      "Bash(\"C:\\Users\\diket\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" list)",
+      "Bash(\"C:\\Users\\diket\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" pull llama3)",
+      "Bash(\"C:\\Users\\diket\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" run mistral \"Bonjour\")",
+      "Bash(\"C:\\Users\\diket\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" pull gemma:2b)",
+      "Bash(tasklist:*)",
+      "Bash(wmic process:*)",
+      "Bash(npm run lab6:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
