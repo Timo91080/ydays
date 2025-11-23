@@ -8,7 +8,9 @@
     "start": "node src/main.js",
     "lab4": "node src/main.js",
     "lab5": "node src/main.js",
-    "lab6": "node src/main.js"
+    "lab6": "node src/main.js",
+    "m2-lab1-sans": "node module2-lab1-sans-memoire.js",
+    "m2-lab1-avec": "node module2-lab1-avec-memoire.js"
   },
   "keywords": ["ai", "agent", "reactive", "chatbot", "openai", "azure"],
   "author": "Ydays 2025",
