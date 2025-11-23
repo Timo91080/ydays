@@ -18,8 +18,8 @@ Ydays 2025 - Labs 1 à 6 complétés
 - ✅ **Lab 5** : Mini-chatbot complet avec interactivité
 - ✅ **Lab 6** : Évaluation qualité des réponses
 - ✅ **Lab 7** : Structuration Git et versioning
-- 🔄 **Lab 8** : Conteneurisation Docker (en cours)
-- 🔄 **Lab 9** : Documentation complète (en cours)
+- ✅ **Lab 8** : Conteneurisation Docker
+- ✅ **Lab 9** : Documentation complète
 
 ---
 
@@ -236,17 +236,68 @@ AZURE_OPENAI_MODEL=gpt-4
 
 ## 🐳 Docker (Lab 8)
 
-### Build de l'image
+### Prérequis
+- Docker installé ([Get Docker](https://docs.docker.com/get-docker/))
+
+### 1️⃣ Build de l'image
 
 ```bash
 docker build -t ai-agent-lab .
 ```
 
-### Exécution
+**Explication :**
+- `-t ai-agent-lab` : Nom de l'image
+- `.` : Contexte de build (répertoire courant)
+
+### 2️⃣ Exécution interactive
 
 ```bash
 docker run --rm -it --env-file .env ai-agent-lab
 ```
+
+**Options :**
+- `--rm` : Supprime le conteneur après arrêt
+- `-it` : Mode interactif avec terminal
+- `--env-file .env` : Charge les variables d'environnement depuis `.env`
+
+### 3️⃣ Alternative : Variables d'environnement manuelles
+
+```bash
+docker run --rm -it \
+  -e AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/" \
+  -e AZURE_OPENAI_API_KEY="your-key" \
+  -e AZURE_OPENAI_DEPLOYMENT="gpt-4" \
+  -e AZURE_OPENAI_API_VERSION="2024-12-01-preview" \
+  ai-agent-lab
+```
+
+### 4️⃣ Vérifier l'image
+
+```bash
+# Lister les images
+docker images | grep ai-agent-lab
+
+# Taille de l'image
+docker image inspect ai-agent-lab --format='{{.Size}}' | numfmt --to=iec
+```
+
+### 5️⃣ Push vers Docker Hub (optionnel)
+
+```bash
+# Se connecter
+docker login
+
+# Tagger l'image
+docker tag ai-agent-lab your-username/ai-agent-lab:latest
+
+# Push
+docker push your-username/ai-agent-lab:latest
+```
+
+### 📦 Fichiers Docker
+
+- **Dockerfile** : Configuration de l'image
+- **.dockerignore** : Fichiers exclus du build
 
 ---
 

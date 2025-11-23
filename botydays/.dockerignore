@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Logs
+*.log
+logs/
+
+# Test files
+*.test.js
+*.spec.js
+
+# Documentation
+README.md
+*.md
+
+# Old lab files (not needed in container)
+lab*.js
+test-*.js
+*.json.bak
+conversation.json
+evaluation-results.json
