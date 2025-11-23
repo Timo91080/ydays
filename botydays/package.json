@@ -10,14 +10,24 @@
     "lab5": "node src/main.js",
     "lab6": "node src/main.js",
     "m2-lab1-sans": "node module2-lab1-sans-memoire.js",
-    "m2-lab1-avec": "node module2-lab1-avec-memoire.js"
+    "m2-lab1-avec": "node module2-lab1-avec-memoire.js",
+    "m2-lab2": "node module2-lab2-buffer-memory.js"
   },
-  "keywords": ["ai", "agent", "reactive", "chatbot", "openai", "azure"],
+  "keywords": [
+    "ai",
+    "agent",
+    "reactive",
+    "chatbot",
+    "openai",
+    "azure"
+  ],
   "author": "Ydays 2025",
   "license": "ISC",
   "dependencies": {
-    "openai": "latest",
     "@azure/identity": "latest",
-    "dotenv": "latest"
+    "@langchain/openai": "^1.1.2",
+    "dotenv": "latest",
+    "langchain": "^1.0.6",
+    "openai": "latest"
   }
 }
