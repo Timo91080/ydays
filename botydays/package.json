@@ -11,7 +11,8 @@
     "lab6": "node src/main.js",
     "m2-lab1-sans": "node module2-lab1-sans-memoire.js",
     "m2-lab1-avec": "node module2-lab1-avec-memoire.js",
-    "m2-lab2": "node module2-lab2-buffer-memory.js"
+    "m2-lab2": "node module2-lab2-buffer-memory.js",
+    "m2-lab3": "node module2-lab3-vector-store.js"
   },
   "keywords": [
     "ai",
@@ -26,6 +27,7 @@
   "dependencies": {
     "@azure/identity": "latest",
     "@langchain/openai": "^1.1.2",
+    "chromadb": "^3.1.6",
     "dotenv": "latest",
     "langchain": "^1.0.6",
     "openai": "latest"
