@@ -122,8 +122,8 @@ class ChatBot {
 
       const response = await this.client.chat.completions.create({
         messages: messages,
-        temperature: this.temperature,
         max_completion_tokens: 500
+        // Note: temperature non supportée par gpt-5-mini (valeur par défaut: 1)
       });
 
       const duration = ((Date.now() - startTime) / 1000).toFixed(1);
