@@ -4,7 +4,8 @@
       "Bash(echo:*)",
       "Bash(.env.example)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit - Labs 1-6 completed\n\n- Lab 1: Environment setup with Ollama and OpenAI\n- Lab 2: Model comparison (local vs API)\n- Lab 3: Prompt engineering tests\n- Lab 4: Reactive agent implementation\n- Lab 5: Complete mini-chatbot\n- Lab 6: Response quality evaluation\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit - Labs 1-6 completed\n\n- Lab 1: Environment setup with Ollama and OpenAI\n- Lab 2: Model comparison (local vs API)\n- Lab 3: Prompt engineering tests\n- Lab 4: Reactive agent implementation\n- Lab 5: Complete mini-chatbot\n- Lab 6: Response quality evaluation\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

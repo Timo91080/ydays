@@ -1,22 +1,17 @@
 {
-  "name": "botydays-lab1",
+  "name": "ai-agent-lab",
   "version": "1.0.0",
-  "description": "Lab 1 - Agent Réactif Hello World",
+  "description": "Module 1 - L'Agent Réactif ('Hello World') - Ydays 2025",
   "type": "module",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test:ollama": "node test-ollama.js",
-    "test:azure": "node test-azure-openai.js",
-    "test": "node test-ollama.js",
-    "lab2": "node lab2-comparison.js",
-    "lab3": "node lab3-comparison.js",
-    "lab4": "node lab4-agent-api.js",
-    "lab4:spawn": "node lab4-agent-reactif.js",
-    "lab5": "node lab5-chatbot-complet.js",
-    "lab6": "node lab6-evaluation.js"
+    "start": "node src/main.js",
+    "lab4": "node src/main.js",
+    "lab5": "node src/main.js",
+    "lab6": "node src/main.js"
   },
-  "keywords": ["ai", "agent", "ollama", "openai"],
-  "author": "",
+  "keywords": ["ai", "agent", "reactive", "chatbot", "openai", "azure"],
+  "author": "Ydays 2025",
   "license": "ISC",
   "dependencies": {
     "openai": "latest",
